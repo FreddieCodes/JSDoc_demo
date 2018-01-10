@@ -2,10 +2,10 @@
 export class Pet {
     /**
      * Create a Pet.
-     * @param {string} name 
-     * @param {string} species 
-     * @param {number} loyalty 
-     * @param {string} noise
+     * @param {string} name Name of the pet.
+     * @param {string} species Species of the pet.
+     * @param {number} loyalty Loyalty of the pet (0-10, 10 being the most loyal).
+     * @param {string} noise Noise pet makes.
      */
     constructor(name, species, loyalty, noise){
         this.name;
