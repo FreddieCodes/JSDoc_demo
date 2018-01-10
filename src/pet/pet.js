@@ -1,5 +1,3 @@
-import { Person } from "../person/person";
-
 /** Class representing a pet */
 export class Pet {
     /**
@@ -18,7 +16,7 @@ export class Pet {
 
     /**
     * Get the pet's name
-    * @returns {string} Pet's name.
+    * @returns {string} The pet's name.
     */
     getName() {
         return this.name;
@@ -26,7 +24,7 @@ export class Pet {
 
     /**
     * Get the pet's species
-    * @returns {string} Pet's species.
+    * @returns {string} The pet's species.
     */
     getSpecies() {
         return this.species;
@@ -34,11 +32,21 @@ export class Pet {
 
     /**
     * Tell the pet to make noise
-    * @returns {string} Noise of pet.
+    * @returns {string} The noise of pet.
     */
     makeNoise() {
         console.log(this.noise);
     }
 
+    /**
+     * Compares whether two pets are the same species.
+     * @param {Pet} pet1 The first pet.
+     * @param {Pet} pet2 The second pet.
+     * @returns {bool} The result of the comparison.
+     */
+    static comparePetSpecies(pet1, pet2){
+        let result = pet1.species === pet2.species;
+        return result;
+    }
 }
 
