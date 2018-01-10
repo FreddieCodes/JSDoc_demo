@@ -47,4 +47,6 @@ export class Person {
     const age = new Date().getFullYear() - this.yearOfBirth;
     return age;
   }
+
+  
 }
