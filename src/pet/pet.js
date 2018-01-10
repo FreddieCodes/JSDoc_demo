@@ -18,7 +18,7 @@ export class Pet {
 
     /**
     * Get the pet's name
-    * @returns {string}
+    * @returns {string} Pet's name.
     */
     getName() {
         return this.name;
@@ -26,12 +26,16 @@ export class Pet {
 
     /**
     * Get the pet's species
-    * @returns {string}
+    * @returns {string} Pet's species.
     */
     getSpecies() {
         return this.species;
     }
 
+    /**
+    * Tell the pet to make noise
+    * @returns {string} Noise of pet.
+    */
     makeNoise() {
         console.log(this.noise);
     }
