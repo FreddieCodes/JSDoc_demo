@@ -3,7 +3,7 @@ export class Person {
   /**
    * Create a Person.
    * @param {string} name Name of the person.
-   * @param {int} yearOfBirth Year of birth.
+   * @param {number} yearOfBirth Year of birth.
    * @param {string} [job=false] - The person's job.
    */
   constructor(name, yearOfBirth, job = false) {
